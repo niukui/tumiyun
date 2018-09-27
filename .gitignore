@@ -1,23 +1,25 @@
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Folder config file
-Desktop.ini
+# dependencies
+/node_modules
+/node_modules1
+# roadhog-api-doc ignore
+/src/utils/request-temp.js
+_roadhog-api-doc
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# production
+/dist
+/vscode
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
 
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
+/coverage
+.idea
+yarn.lock
+package-lock.json
+*bak
+jsconfig.json
+.vscode/settings.json

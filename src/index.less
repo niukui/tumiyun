@@ -1,0 +1,178 @@
+html,
+body,
+:global(#root) {
+  height: 100%;
+}
+
+:global(.ant-layout) {
+  min-height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+// temp fix for https://github.com/ant-design/ant-design/commit/a1fafb5b727b62cb0be29ce6e9eca8f579d4f8b7
+:global {
+  .ant-spin-container {
+    overflow: visible !important;
+  }
+  .dropzone .dz-preview.dz-error .dz-error-message-up {
+    display: block; }
+  .dropzone .dz-preview.dz-error:hover .dz-error-message-up {
+    opacity: 1;
+    pointer-events: auto; }
+  .dropzone .dz-preview .dz-error-message-up {
+    pointer-events: none;
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    font-size: 13px;
+    bottom: 130px;
+    left: -10px;
+    width: 140px;
+    background: #be2626;
+    background: linear-gradient(to bottom, #be2626, #a92222);
+    padding: 0.5em 1.2em;
+    color: white; }
+    .dropzone .dz-preview .dz-error-message-up:after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 64px;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #be2626; }
+      .dropzone .dz-preview .dz-retry {
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        border: none; }
+        .dropzone .dz-preview .dz-retry:hover {
+          text-decoration: underline; }
+
+          .ant-form-item-control .dropzone .dz-preview .dz-details{
+            z-index: 20;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            font-size: 13px;
+            min-width: 100%;
+            max-width: 100%;
+            padding: 0em 0em; 
+            text-align: center;
+            color: rgba(0,0,0,0.9);
+            line-height: 150%;
+          }
+          .ant-form-item-control .dropzone .dz-preview .dz-image{
+            border-radius: 5px;
+            overflow: hidden;
+            width: 120px; 
+            height:auto;
+            position: relative;
+            display: block;
+            z-index: 10;
+          }
+}
+
+.ant-btn.slick-arrow.slick-next.ant-btn-primary.ant-btn-circle.ant-btn-icon-only {
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: "red"
+}
+/* Filepicker CSS */
+.filepicker {
+  font-family: sans-serif;
+}
+
+div.filepicker {
+  text-align: center;
+  padding: 5px;
+  background-color: #E1E1E1;
+  border-radius: 5px;
+  min-height: 60px;
+  border: 2px dashed #C7C7C7;
+}
+
+/* Icon */
+.filepicker-file-icon
+{
+  position: relative;
+
+  display: inline-block;
+
+  margin: 1.5em 0 2.5em 0;
+  padding-left: 45px;
+
+  color: black;
+}
+.filepicker-file-icon::before
+{
+  position: absolute;
+  top: -7px;
+  left: 0;
+
+  width: 29px;
+  height: 34px;
+
+  content: '';
+
+  border: solid 2px #7F7F7F;
+  border-radius: 2px;
+}
+.filepicker-file-icon::after
+{
+  font-size: 11px;
+  line-height: 1.3;
+
+  position: absolute;
+  top: 9px;
+  left: -4px;
+
+  padding: 0 2px;
+
+  content: 'file';
+  content: attr(data-filetype);
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: #000;
+}
+.filepicker-file-icon .fileCorner
+{
+  position: absolute;
+  top: -7px;
+  left: 22px;
+
+  width: 0;
+  height: 0;
+
+  border-width: 11px 0 0 11px;
+  border-style: solid;
+  border-color: white transparent transparent #920035;
+}
